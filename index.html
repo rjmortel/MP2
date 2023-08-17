@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rj Mortel</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar fixed-top navbar-expand-md" id="home">
+      <div class="container-fluid navbar-tog hover-overlay p-3">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav justify-content-center"
+          id="navbarNav"
+        >
+          <ul
+            class="navbar-nav nav justify-content-center d-flex align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about-sec"
+                ><h6 class="nav-font">ABOUT</h6></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery"
+                ><h6 class="nav-font">GALLERY</h6></a
+              >
+            </li>
+            <li class="nav-item order-md-0">
+              <a class="navbar-brand" href="#">
+                <img
+                  class="nav-logo d-none d-md-block"
+                  src="assets/images/randr logo revised.png"
+                  alt="Logo"
+                  width="160"
+                  height="140"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"
+                ><h6 class="nav-font">SERVICES</h6></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><h6 class="nav-font">CONTACT</h6></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/images/carousel/carousel3.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/carousel/carousel1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/carousel/carousel2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- 2nd Nav sticky -->
+    <div class="nav2">
+      <div class="d-none d-md-block sticky-top">
+        <ul class="justify-content-center nav shadow-lg nav-2">
+          <li class="nav-item text-center">
+            <a class="nav-link nav-font nav2-hover" href="#home">HOME</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link nav-font nav2-hover" href="#about-sec">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle nav-font nav2-hover"
+              data-bs-toggle="dropdown"
+              href="#gallery"
+              role="button"
+              aria-expanded="false"
+              >GALLERY</a
+            >
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#gallery">Portraits</a></li>
+              <li><a class="dropdown-item" href="#weddings">Weddings</a></li>
+              <li><a class="dropdown-item" href="#newborn">New Born</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-font nav2-hover" href="#services"
+              >SERVICES</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-font nav2-hover" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- About -->
+      <div class="about-sec" id="about-sec">
+        <div class="container-fluid">
+          <div
+            class="container d-flex flex-column align-items-center flex-md-row"
+          >
+            <div class="container-md w-75">
+              <h1 class="about-header display-6">The Photographer</h1>
+              <span
+                ><p class="about-content">
+                  I am a passionate and experienced photographer who believes in
+                  the power of capturing moments and telling stories through
+                  images. With a keen eye for detail and a deep understanding of
+                  composition, lighting, and perspective, I strive to create
+                  visually stunning photographs that evoke emotions and leave a
+                  lasting impression.
+                </p>
+
+                <p class="about-content">
+                  Over the years, I have honed my skills in various genres of
+                  photography including portrait, landscape, street, and event
+                  photography. Each new project is an opportunity for me to
+                  explore different techniques and push the boundaries of my
+                  creativity. I am constantly seeking inspiration from the world
+                  around me, as I firmly believe that beauty can be found in the
+                  most unexpected places.
+                </p>
+              </span>
+            </div>
+            <div class="container">
+              <img
+                src="assets/images/about pic crop.jpg"
+                class=""
+                alt="image"
+                width="85%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <section class="gallery min-vh-100" id="gallery">
+        <div class="container p-1 gallery-header">
+          <h3 class="">Portraits</h3>
+        </div>
+        <div class="container-lg">
+          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+              <img
+                src="assets/images/portrait/portrait1.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/portrait/portrait3.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/portrait/portrait2.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/portrait/portrait4.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/portrait/portrait5.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/portrait/portrait6.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container p-5 mt-5 gallery-header" id="weddings">
+          <h3 class="">Weddings</h3>
+        </div>
+        <div class="container-lg">
+          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+              <img
+                src="assets/images/weddings/wedding1.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/weddings/wedding2.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/weddings/wedding3.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/weddings/wedding4.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/weddings/wedding6.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/weddings/wedding5.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container p-5 mt-5 gallery-header" id="newborn">
+          <h3 class="">New Born</h3>
+        </div>
+        <div class="container-lg">
+          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+              <img
+                src="assets/images/newborn/newborn2.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/newborn/newborn1.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/newborn/newborn3.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/newborn/newborn5.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/newborn/newborn4.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/images/newborn/newborn6.jpg"
+                class="gallery-item"
+                alt="gallery"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Modal -->
+      <div
+        class="modal fade"
+        id="gallery-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/1.jpg" class="modal-img" alt="modal img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- services -->
+
+      <div class="container pt-5" id="services">
+        <h3 class="text-center">
+          Try Our Photo Shoot
+          <small class="text-body-secondary">50% off! Limited time only</small>
+        </h3>
+        <div class="card-group">
+          <div class="card m-2 rounded-end">
+            <img
+              src="assets/images/portrait/portrait2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portrait</h5>
+              <p class="card-text">
+                Are you looking to create stunning portraits that truly reflect
+                your beuty and personality? Look no further! Our team of
+                experienced and passionate photographer is here to provide you
+                with top-notch portrait shoot services.
+              </p>
+              <br /><br /><br />
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >We are excited to see you</small
+                >
+              </p>
+
+              <a href="#contact" class="btn btn-primary"
+                >Book an appointntment</a
+              >
+            </div>
+          </div>
+          <div class="card m-2 border-start rounded">
+            <img
+              src="assets/images/weddings/wedding7.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wedding</h5>
+              <p class="card-text">
+                Your wedding day is a once in a lifetime celebration filled with
+                love, joy and unforgettable moments. We understand the
+                importance of preserving these precious memories. That's why we
+                are here to offer you our exeptional wedding shoot services.
+              </p>
+              <br /><br /><br />
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >We are excited to see you</small
+                >
+              </p>
+              <a href="#contact" class="btn btn-primary">Book an appointment</a>
+            </div>
+          </div>
+          <div class="card m-2 border-start rounded-start">
+            <img
+              src="assets/images/newborn/newborn3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">New Born</h5>
+              <p class="card-text">
+                The arrival of a newborn is an incredibly special and joyous
+                time in your life. Those precious early weeks are filled with
+                tender moments, tiny toes, and sweet smiles that you will want
+                to remember forever. We understand the importance of capturing
+                these cherished memories, and we are here to offer you our
+                exceptional newborn shoot services.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >We are excited to see you</small
+                >
+              </p>
+              <a href="#contact" class="btn btn-primary">Book an appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-sec pt-5 pb-2" id="contact">
+        <!-- contact -->
+
+        <div class="container w-25 border-top">
+          <p class="text-center">
+            <i class="fa fa-map-marker" style="font-size: 40px; color: red"></i>
+            Barangay Muzon SJDM Bulacan
+          </p>
+          <p class="text-center">
+            <i class="fa fa-phone" style="font-size: 40px; color: red"></i>
+            #09453114320 / 09533842828
+          </p>
+        </div>
+        <div class="container shadow w-50 border-top">
+          <!-- Wrapper container -->
+          <div class="container py-4">
+            <h5>For appointment please fill out this form</h5>
+
+            <!-- Bootstrap 5 starter form -->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input -->
+              <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  Name is required.
+                </div>
+              </div>
+
+              <!-- Email address input -->
+              <div class="mb-3">
+                <label class="form-label" for="emailAddress"
+                  >Email Address</label
+                >
+                <input
+                  class="form-control"
+                  id="emailAddress"
+                  type="email"
+                  placeholder="Email Address"
+                  data-sb-validations="required, email"
+                />
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="emailAddress:required"
+                >
+                  Email Address is required.
+                </div>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="emailAddress:email"
+                >
+                  Email Address Email is not valid.
+                </div>
+              </div>
+
+              <!-- Message input -->
+              <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Message"
+                  style="height: 10rem"
+                  data-sb-validations="required"
+                ></textarea>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  Message is required.
+                </div>
+              </div>
+
+              <!-- Form submissions success message -->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">Form submission successful!</div>
+              </div>
+
+              <!-- Form submissions error message -->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">
+                  Error sending message!
+                </div>
+              </div>
+
+              <!-- Form submit button -->
+              <div class="d-grid">
+                <button
+                  class="btn btn-primary btn-lg"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-to-top-wrapper sticky-bottom float-end">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"
+          ><i class="fa fa-arrow-circle-up" style="font-size: 36px"></i
+        ></a>
+      </div>
+
+      <!--Bottom Footer-->
+      <div class="bottom section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="container d-flex justify-content-center">
+                <img
+                  class="nav-logo d-none d-md-block"
+                  src="assets/images/randr logo revised.png"
+                  alt="Logo"
+                  width="160"
+                  height="140"
+                />
+              </div>
+              <div class="copyright">
+                <p>
+                  © <span>2023</span>
+                  <a href="#" class="transition">RjMortel</a> All rights
+                  reserved.
+                </p>
+              </div>
+
+              <!-- social media icon -->
+              <div class="text-center center-block">
+                <a href="#"
+                  ><i
+                    id="social-fb"
+                    class="fa fa-facebook-square fa-3x social"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    id="social-tw"
+                    class="fa fa-twitter-square fa-3x social"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    id="social-gp"
+                    class="fa fa-google-plus-square fa-3x social"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    id="social-em"
+                    class="fa fa-envelope-square fa-3x social"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sticky nav div -->
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
