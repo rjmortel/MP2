@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="bg-dark text-white p-3">
+      <h1 class="text-center">My Admin Dashboard</h1>
+    </header>
+    <nav class="bg-light p-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="#">Calendar</a></li>
+        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="#">Customers</a></li>
+        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="#">Settings</a></li>
+        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="/index.html">Back to main page <i class="fa-solid fa-rotate-left fa-fade"></i></a></li>
+      </ul>
+    </nav>
+
+    <main class="container mt-4">
+      <section class="mb-4">
+        <h2>Welcome to the Admin Dashboard</h2>
+        <p class="lead">
+          This is the central hub for managing your photography business.
+        </p>
+      </section> 
+
+
+      <section class="mb-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+         View Calendar
+        </button>
+        <p class="lead">
+          Manage your customer schedules
+        </p>
+        
+        
+        <!-- Calendar Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Calendar Schedule</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Calendar content goes here -->
+                <p>Example calendar schedule content...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="mb-4">
+        <h2>Customers</h2>
+        <p class="lead">
+          Manage your customer inquiry
+        </p>
+        <a href="#" class="btn btn-secondary">View Customers inquiry</a>
+      </section>
+      <section class="mb-4">
+        <h2>Settings</h2>
+        <p class="lead">
+          Configure and customize the admin dashboard settings.
+        </p>
+        <a href="#" class="btn btn-secondary">View Settings</a>
+      </section>
+    </main>
+    <footer class="bg-light text-center p-3">
+      <p>&copy; 2023 My Admin Dashboard. All rights reserved.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/1d8a05e169.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,6 +1,12 @@
 @import url(https://db.onlinewebfonts.com/c/bf436b16c1cc2fbc68aa9413bca8ec29?family=Apercu+Pro+Mono);
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
 
+/* admin login */
+.form-control:focus {
+  border-color: #BF994D;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #BF994D;
+}
+
 /* nav */
 .nav-font {
   margin: 0;
@@ -54,11 +60,12 @@ img {
   max-width: 100%;
 }
 .gallery {
-  background-color: #dbddf1;
+  background-color: #000000;
   padding: 80px 0;
 }
 .gallery h3 {
   font-family: "Apercu Pro Mono";
+  color: white;
 }
 .gallery img {
   background-color: #ffffff;
