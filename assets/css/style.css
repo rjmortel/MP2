@@ -1,5 +1,13 @@
 @import url(https://db.onlinewebfonts.com/c/bf436b16c1cc2fbc68aa9413bca8ec29?family=Apercu+Pro+Mono);
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 /* admin login */
 .form-control:focus {
@@ -79,6 +87,9 @@ img {
 }
 
 /* services */
+.services {
+  background-color: rgb(0, 0, 0);
+}
 .h5 {
   font-family: "Apercu Pro Mono";
 }
@@ -169,6 +180,57 @@ a:hover {
   /* emoji don't behave like regular fonts
      so this helped position it correctly */
   padding: 0.25rem;
+}
+
+
+/* Get in touch */
+
+
+
+.message-container{
+    width: 100%;
+    height: 100vh;
+    background: #1b1c1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-message{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width:600px;
+    border-radius: 10px;
+}
+form h3{
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #343537;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
 
 @media (max-width: 768px) {

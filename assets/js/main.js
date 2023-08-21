@@ -9,18 +9,15 @@ function handleKeyUp(e) {
         <div class="modal-dialog modal-sm modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body">
-              <form id="passwordForm" class="">
-                <div class="mb-3">
-                  <label for="passwordInput" class="form-label">ADMIN PASSWORD</label>
-                  <input type="password" id="passwordInput" class="form-control form-control-sm" required>
-                  
-                </div>
-                <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-              </form>
+            <form id="passwordFormAdmin">
+            <label class="form-label text-center">Admin login</label>
+            <input type="password" class="form-control" id="passwordInputAdmin" placeholder="Password" required>
+            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+          </form>
             </div>
           </div>
         </div>
-      </div>
+      </div>-
 
 	  `;
     openModal();
@@ -42,9 +39,10 @@ function validatePassword(password) {
   if (password == passRef) {
     // alert("Connect")
     window.location.href = "/assets/pages/admin.html";
+    return true;
   } else {
     alert("Incorrect Password");
-    return true;
+    return false;
   }
 }
 
@@ -66,16 +64,18 @@ document.addEventListener("click", function (e) {
 });
 
 //Submit Button
-document.getElementById("passwordForm");
 document.addEventListener("submit", function (event) {
-  event.preventDefault();
+  if (event.target.id === "passwordFormAdmin") {
+    event.preventDefault(); // Prevent default form submission behavior
 
-  const passwordInput = document.getElementById("passwordInput");
+    const passwordInput = document.getElementById("passwordInputAdmin");
 
-  if (passwordInput.checkValidity() && validatePassword(passwordInput.value)) {
-    console.log("input password: ", passwordInput.value);
-  } else {
-    // Password is invalid, show error message
-    passwordInput.classList.add("is-invalid");
+    if (passwordInput && validatePassword(passwordInput.value)) {
+      console.log("input password: ", passwordInput.value);
+      window.location.href = "/assets/pages/admin.html"; // Redirect to another page
+    } else {
+      // Password is invalid, show error message
+    }
   }
 });
+``;

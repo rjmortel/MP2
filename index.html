@@ -406,11 +406,11 @@
       </div>
 
       <!-- services -->
-
+      <div class="services">
       <div class="container pt-5" id="services">
-        <h3 class="text-center">
+        <h3 class="text-white text-center">
           Try Our Photo Shoot
-          <small class="text-body-secondary">50% off! Limited time only</small>
+          <small class="text-white">50% off! Limited time only</small>
         </h3>
         <div class="card-group">
           <div class="card m-2 rounded-end">
@@ -434,7 +434,7 @@
                 >
               </p>
 
-              <a href="#contact" class="btn btn-primary"
+              <a href="#contact" class="btn btn-secondary"
                 >Book an appointntment</a
               >
             </div>
@@ -459,7 +459,7 @@
                   >We are excited to see you</small
                 >
               </p>
-              <a href="#contact" class="btn btn-primary">Book an appointment</a>
+              <a href="#contact" class="btn btn-secondary">Book an appointment</a>
             </div>
           </div>
           <div class="card m-2 border-start rounded-start">
@@ -483,125 +483,30 @@
                   >We are excited to see you</small
                 >
               </p>
-              <a href="#contact" class="btn btn-primary">Book an appointment</a>
+              <a href="#contact" class="btn btn-secondary">Book an appointment</a>
             </div>
           </div>
         </div>
       </div>
+      </div>
 
       <div class="contact-sec pt-5 pb-2" id="contact">
-        <!-- contact -->
+        <!-- contact US-->
 
-        <div class="container w-25 border-top">
-          <p class="text-center">
-            <i class="fa fa-map-marker" style="font-size: 40px; color: red"></i>
-            Barangay Muzon SJDM Bulacan
-          </p>
-          <p class="text-center">
-            <i class="fa fa-phone" style="font-size: 40px; color: red"></i>
-            #09453114320 / 09533842828
-          </p>
-        </div>
-        <div class="container shadow w-50 border-top">
-          <!-- Wrapper container -->
-          <div class="container py-4">
-            <h5>For appointment please fill out this form</h5>
-
-            <!-- Bootstrap 5 starter form -->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-              <!-- Name input -->
-              <div class="mb-3">
-                <label class="form-label" for="name">Name</label>
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Name"
-                  data-sb-validations="required"
-                />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  Name is required.
-                </div>
-              </div>
-
-              <!-- Email address input -->
-              <div class="mb-3">
-                <label class="form-label" for="emailAddress"
-                  >Email Address</label
-                >
-                <input
-                  class="form-control"
-                  id="emailAddress"
-                  type="email"
-                  placeholder="Email Address"
-                  data-sb-validations="required, email"
-                />
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="emailAddress:required"
-                >
-                  Email Address is required.
-                </div>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="emailAddress:email"
-                >
-                  Email Address Email is not valid.
-                </div>
-              </div>
-
-              <!-- Message input -->
-              <div class="mb-3">
-                <label class="form-label" for="message">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  type="text"
-                  placeholder="Message"
-                  style="height: 10rem"
-                  data-sb-validations="required"
-                ></textarea>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  Message is required.
-                </div>
-              </div>
-
-              <!-- Form submissions success message -->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">Form submission successful!</div>
-              </div>
-
-              <!-- Form submissions error message -->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">
-                  Error sending message!
-                </div>
-              </div>
-
-              <!-- Form submit button -->
-              <div class="d-grid">
-                <button
-                  class="btn btn-primary btn-lg"
-                  id="submitButton"
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+        <!-- get in touch form -->
+        
+        <div class="message-container">
+          <h3>Get in touch with us</h3>
+          <form class="form-message" action="https://formsubmit.co/rjpalang@gmail.com" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="number" name="number" placeholder="Phone no." required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+              <button type="submit" value="value-1">Send </button>
+          </form>
       </div>
-
-      <div class="back-to-top-wrapper sticky-bottom float-end">
-        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"
-          ><i class="fa fa-arrow-circle-up" style="font-size: 36px"></i
-        ></a>
-      </div>
-
+     
+        
       <!--Bottom Footer-->
       <div class="bottom section-padding">
         <div class="container">
