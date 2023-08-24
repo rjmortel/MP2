@@ -1,6 +1,8 @@
 @import url(https://db.onlinewebfonts.com/c/bf436b16c1cc2fbc68aa9413bca8ec29?family=Apercu+Pro+Mono);
 @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 *{
   margin: 0;
@@ -19,7 +21,7 @@
 .nav-font {
   margin: 0;
   font-size: 14px;
-  font-family: "Apercu Pro Mono";
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   color: rgb(255, 255, 255);
   opacity: 90%;
@@ -53,13 +55,13 @@ nav a:hover {
 .about-header {
   color: #bf994d;
 
-  font-family: "Apercu Pro Mono";
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 .about-content {
   color: white;
   opacity: 85%;
-  font-family: "Baskervville", serif;
+  font-family: 'Poppins', sans-serif;
   text-align: start;
 }
 
@@ -72,7 +74,7 @@ img {
   padding: 80px 0;
 }
 .gallery h3 {
-  font-family: "Apercu Pro Mono";
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 .gallery img {
@@ -90,15 +92,32 @@ img {
 .services {
   background-color: rgb(0, 0, 0);
 }
+
+/* .card-img-top {
+  height: 300px;
+}
+.card-text {
+  height: 100px;
+}
+.card-body {
+  height: 400px;
+} */
+
 .h5 {
-  font-family: "Apercu Pro Mono";
+  font-family: 'Poppins', sans-serif;
 }
 .p {
-  font-family: "Baskervville", serif;
+  font-family: 'Poppins', sans-serif;
 }
+.card-portrait {
+  min-height: 500px;
+}
+
+
+
 /* contact */
 .contact-sec {
-  background-color: #dbddf1;
+  background-color: #000000;
 }
 
 /* footer */
@@ -134,7 +153,7 @@ a:hover {
 .bottom .copyright a:hover {
   color: #6c6d83;
 }
-.social:hover {
+/* .social:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -143,12 +162,12 @@ a:hover {
   -webkit-transform: scale(0.8);
   /* Browser Variations: */
 
-  -moz-transform: scale(0.8);
+  /* -moz-transform: scale(0.8);
   -o-transform: scale(0.8);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
-}
+} */ */
 
 /*
  Multicoloured Hover Variations
@@ -167,7 +186,8 @@ a:hover {
   color: #f39c12;
 }
 
-.back-to-top-link {
+/* backt to top */
+/* .back-to-top-link {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
@@ -176,17 +196,123 @@ a:hover {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  color: #bf994d;
+  color: #bf994d; */
   /* emoji don't behave like regular fonts
      so this helped position it correctly */
-  padding: 0.25rem;
+  /* padding: 0.25rem;
+} */
+
+
+/* reviews */
+form .ratingsContainer{
+  margin-bottom: 20px;
+  color: gray;
+}
+form .ratings{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 208px;
+  height: 40px;
+  margin: auto;
+  justify-content: center;
+}
+form .ratings span{
+  cursor: pointer;
+  transition: color .2s;
+  font-size: 30px;
+}
+form .ratings span:hover{
+  color: #99783f;
+}
+form .ratings span:hover ~ span{
+  color: #99783f;
+}
+form .ratings span.active {
+ color:#99783f;
+}
+.inputContainer {
+   margin: 10px 100px;
+   padding: 100px 0;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   justify-content: space-around;
+}
+
+#nameInput {
+   background-color: rgb(46, 44, 44);
+   opacity: 20;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   width: 400px;
+   border-radius: 2px;
+}
+
+#commentInput {
+   background-color: rgb(46, 44, 44);
+   opacity: 20;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   width: 400px;
+   height: 150px;
+   border-radius: 2px;
+}
+
+input[type=submit] {
+   background-color: rgb(46, 44, 44);
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100px;
+ }
+
+.rem-border {
+   border: 0;
+}
+
+.rem-border:focus {
+   outline: none;
+}
+.postDisplay {
+   margin: 100px 0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.commentCard {
+   width: 100px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   margin: 0 10px;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.customerName {
+   padding: 20px 0;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: small;
+   text-align: end;
+}
+
+.customerComment {
+   color: rgb(0, 0, 0);
+   font-family: 'Poppins', sans-serif;
+   font-size: smaller;
+   text-align: justify;
+   line-height: 180%;
+   width: 200px;
 }
 
 
+
+
 /* Get in touch */
-
-
-
 .message-container{
     width: 100%;
     height: 100vh;
@@ -231,6 +357,154 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+
+/* reviews */
+.reviews-sec {
+  background-color: #000000;
+}
+.reviewSection {
+  background-color: black;
+}
+.reviewHeader {
+  margin: 50px auto;
+  display: flex;
+  color: rgb(156, 142, 142);
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  justify-content: center;
+}
+
+form .ratingsContainer{
+  margin-bottom: 20px;
+  color: gray;
+}
+.rate {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 208px;
+   height: 40px;
+   margin: auto;
+   justify-content: center;
+}
+/* it goes to top when its checked */
+.rate:not(:checked) > input {
+ display: none;
+}
+.rate:not(:checked) > label {
+   float: right;
+   width: 1em;
+   overflow: hidden;
+   white-space: nowrap;
+   cursor: pointer;
+   font-size: 30px;
+   color: #ccc;
+}
+.rate:not(:checked) > label:before { 
+   content: '★ '; 
+}
+.rate > input:checked ~ label { 
+   color: #99783f; 
+}
+.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label { 
+   color: #99783f; 
+}
+.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
+    color: #99783f; 
+}
+.inputContainer {
+   margin: 10px 100px;
+   padding: 100px 0;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   justify-content: space-around;
+}
+
+#nameInput {
+   background-color: rgb(46, 44, 44);
+   opacity: 20;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   width: 400px;
+   border-radius: 2px;
+}
+#nameInput:hover {
+   outline-color: invert;
+}
+#commentInput {
+   background-color: rgb(46, 44, 44);
+   opacity: 20;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   width: 400px;
+   height: 150px;
+   border-radius: 2px;
+}
+
+input[type=submit] {
+   background-color: rgb(46, 44, 44);
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100px;
+ }
+
+.rem-border {
+   border: 0;
+}
+
+.rem-border:focus {
+   outline: none;
+}
+.postDisplay {
+   margin: 100px 0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.commentCard {
+   width: 100px;
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   margin: 0 10px;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.customerName {
+  padding: 50px 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+  text-align: end;
+  height: 10px;
+}
+.customerComment {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: smaller;
+  text-align: justify;
+  line-height: 180%;
+  width: 200px;
+  height: 100px;
+  padding: 0 10px;
+}
+.customerRate {
+  height: 50px;
+  padding: 10px;
+}
+.reviewsCard {
+  border: solid 1px;
+  border-color: #99783f;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 7px 1px #99783f;
 }
 
 @media (max-width: 768px) {

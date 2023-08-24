@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-  </head>
+    <link rel="stylesheet" href="/assets/css/calendar.css">
+  
   <body>
+    <script defer src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/calendar.js"></script>
+
     <header class="bg-dark text-white p-3">
-      <h1 class="text-center">My Admin Dashboard</h1>
     </header>
     <nav class="bg-light p-3">
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="#">Calendar</a></li>
-        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="#">Customers</a></li>
-        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="#">Settings</a></li>
-        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="/index.html">Back to main page <i class="fa-solid fa-rotate-left fa-fade"></i></a></li>
+      <ul class="nav justify-content-right">
+        <li class="nav-item"><a class="nav-link text-primary-emphasis" href="/index.html">Logout</a></li>
       </ul>
     </nav>
 
     <main class="container mt-4">
       <section class="mb-4">
-        <h2>Welcome to the Admin Dashboard</h2>
         <p class="lead">
-          This is the central hub for managing your photography business.
         </p>
       </section> 
 
 
       <section class="mb-4">
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
-         View Calendar
+         View Meetings
         </button>
         <p class="lead">
           Manage your customer schedules
@@ -42,12 +40,27 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Calendar Schedule</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Schedules</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <!-- Calendar content goes here -->
-                <p>Example calendar schedule content...</p>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Phone</th>
+                      <th>Date</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="taskContainer"></tbody>
+                </table>
+                
+                <script src="/assets/js/main.js"></script>
+                <script>
+                  displayEntries();
+                </script>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -58,7 +71,7 @@
       </section>
 
 
-      <section class="mb-4">
+      <!-- <section class="mb-4">
         <h2>Customers</h2>
         <p class="lead">
           Manage your customer inquiry
@@ -71,12 +84,81 @@
           Configure and customize the admin dashboard settings.
         </p>
         <a href="#" class="btn btn-secondary">View Settings</a>
-      </section>
+      </section> -->
     </main>
+
+
+    <div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <div id="calendar"></div>
+  
+  <div id='formDiv'>
+    <fieldset style='padding:0 20px 20px 20px'>
+      <legend>
+        <h2> Add An Event </h2>
+      </legend>
+      <form name='myForm' onsubmit="myFunc()">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" name="eventName" id="eventName" required></td>
+          </tr>
+          <tr>
+            <td>Type:</td>
+            <td style="display: flex;">
+              <select class="selectMenu" id="eventType" name="eventType" onchange="displayCol()" required>
+              <option value="" disabled>Select One</option>
+              <option value="Consultation">Consultation</option>
+              <option value="Done">Done</option>
+              <option value="For Follow Up">For Follow Up</option>
+              </select>
+              <div id="eventColor"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Date:</td>
+            <td><input type="date" name="eventDate" id="eventDate" required></td>
+          </tr>
+          <tr>
+            <td><input type="submit" id="addEventBTN" value="Add"></td>
+            <td><button id="closeBTN" onclick="closeForm()" form="noForm">Close Window</button></td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </div>
+    </div>
     <footer class="bg-light text-center p-3">
-      <p>&copy; 2023 My Admin Dashboard. All rights reserved.</p>
+      <!-- <p>&copy; 2023 My Admin Dashboard. All rights reserved.</p> -->
     </footer>
     <script src="https://kit.fontawesome.com/1d8a05e169.js" crossorigin="anonymous"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>   
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  

@@ -4,16 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rj Mortel</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
     <link
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" type="icon" href="assets/images/favicon.png" />
   </head>
+
   <body>
-    
     <!-- Nav -->
     <nav class="navbar fixed-top navbar-expand-md" id="home">
       <div class="container-fluid navbar-tog hover-overlay p-3">
@@ -36,14 +44,20 @@
             class="navbar-nav nav justify-content-center d-flex align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about-sec"
-                ><h6 class="nav-font">ABOUT</h6></a
-              >
+              <a class="nav-link" aria-current="page" href="#home">
+                <h6 class="nav-font">HOME</h6>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about-sec">
+                <h6 class="nav-font">ABOUT</h6>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery"
-                ><h6 class="nav-font">GALLERY</h6></a
-              >
+              <a class="nav-link" href="#gallery">
+                <h6 class="nav-font">GALLERY</h6>
+              </a>
             </li>
             <li class="nav-item order-md-0">
               <a class="navbar-brand" href="#">
@@ -57,22 +71,24 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services"
-                ><h6 class="nav-font">SERVICES</h6></a
-              >
+              <a class="nav-link" href="#services">
+                <h6 class="nav-font">SERVICES</h6>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact"
-                ><h6 class="nav-font">CONTACT</h6></a
-              >
+              <a class="nav-link" href="#reviews">
+                <h6 class="nav-font">REVIEWS</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <h6 class="nav-font">CONTACT</h6>
+              </a>
             </li>
           </ul>
-          
         </div>
       </div>
-      
     </nav>
-    
 
     <!-- Carousel -->
     <div
@@ -80,7 +96,6 @@
       class="carousel slide"
       data-bs-ride="carousel"
     >
-    
       <div class="carousel-indicators">
         <button
           type="button"
@@ -120,7 +135,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="assets/images/carousel/carousel2.jpg"
+            src="assets/images/carousel/carousel4.jpg"
             class="d-block w-100"
             alt="..."
           />
@@ -145,9 +160,10 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    
-    <div class="" id="admin"></div> <!--admin popup-->
-    
+
+    <div class="" id="admin"></div>
+    <!--admin popup-->
+
     <!-- 2nd Nav sticky -->
     <div class="nav2">
       <div class="d-none d-md-block sticky-top">
@@ -180,11 +196,14 @@
             >
           </li>
           <li class="nav-item">
+            <a class="nav-link nav-font nav2-hover" href="#reviews">REVIEWS</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link nav-font nav2-hover" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
-      
+
       <!-- About -->
       <div class="about-sec" id="about-sec">
         <div class="container-fluid">
@@ -193,8 +212,8 @@
           >
             <div class="container-md w-75">
               <h1 class="about-header display-6">The Photographer</h1>
-              <span
-                ><p class="about-content">
+              <span>
+                <p class="about-content">
                   I am a passionate and experienced photographer who believes in
                   the power of capturing moments and telling stories through
                   images. With a keen eye for detail and a deep understanding of
@@ -225,7 +244,7 @@
           </div>
         </div>
       </div>
-     
+
       <!-- Gallery -->
       <section class="gallery min-vh-100" id="gallery">
         <div class="container p-1 gallery-header">
@@ -399,7 +418,8 @@
               ></button>
             </div>
             <div class="modal-body">
-              <img class="modal-img" alt="modal img" /> <!---->
+              <img class="modal-img" alt="modal img" />
+              <!---->
             </div>
           </div>
         </div>
@@ -407,106 +427,647 @@
 
       <!-- services -->
       <div class="services">
-      <div class="container pt-5" id="services">
-        <h3 class="text-white text-center">
-          Try Our Photo Shoot
-          <small class="text-white">50% off! Limited time only</small>
-        </h3>
-        <div class="card-group">
-          <div class="card m-2 rounded-end">
-            <img
-              src="assets/images/portrait/portrait2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Portrait</h5>
-              <p class="card-text">
-                Are you looking to create stunning portraits that truly reflect
-                your beuty and personality? Look no further! Our team of
-                experienced and passionate photographer is here to provide you
-                with top-notch portrait shoot services.
-              </p>
-              <br /><br /><br />
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >We are excited to see you</small
-                >
-              </p>
+        <div class="container pt-5" id="services">
+          <h3 class="text-white text-center">
+            Try Our Photo Shoot
+            <small class="text-white">50% off! Limited time only</small>
+          </h3>
+          <div class="card-group">
+            <div class="card m-2 rounded-end">
+              <img
+                src="assets/images/portrait/portrait2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-bod card-portrait">
+                <h5 class="card-title">Portrait</h5>
+                <p class="card-text">
+                  Are you looking to create stunning portraits that truly
+                  reflect your beuty and personality? Look no further! Our team
+                  of experienced and passionate photographer is here to provide
+                  you with top-notch portrait shoot services.
+                </p>
+                <br /><br /><br />
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >We are excited to see you</small
+                  >
+                </p>
 
-              <a href="#contact" class="btn btn-secondary"
-                >Book an appointntment</a
-              >
-            </div>
-          </div>
-          <div class="card m-2 border-start rounded">
-            <img
-              src="assets/images/weddings/wedding7.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Wedding</h5>
-              <p class="card-text">
-                Your wedding day is a once in a lifetime celebration filled with
-                love, joy and unforgettable moments. We understand the
-                importance of preserving these precious memories. That's why we
-                are here to offer you our exeptional wedding shoot services.
-              </p>
-              <br /><br /><br />
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >We are excited to see you</small
+                <!--modal for portrait  -->
+                <div
+                  class="modal fade"
+                  id="portrait"
+                  aria-hidden="true"
+                  aria-labelledby="portrait"
+                  tabindex="-1"
                 >
-              </p>
-              <a href="#contact" class="btn btn-secondary">Book an appointment</a>
-            </div>
-          </div>
-          <div class="card m-2 border-start rounded-start">
-            <img
-              src="assets/images/newborn/newborn3.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">New Born</h5>
-              <p class="card-text">
-                The arrival of a newborn is an incredibly special and joyous
-                time in your life. Those precious early weeks are filled with
-                tender moments, tiny toes, and sweet smiles that you will want
-                to remember forever. We understand the importance of capturing
-                these cherished memories, and we are here to offer you our
-                exceptional newborn shoot services.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >We are excited to see you</small
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel"
+                        >
+                          This a sample quotation
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- portrait packages here -->
+
+                        <div class="portrait">
+                          <h3>Portrait</h3>
+                          <br />
+                          <input
+                            name="product2"
+                            value="7500"
+                            type="checkbox"
+                            onclick="totalIt2()"
+                          />
+                          Photo shoot for 3 hours - ₱7,500
+                          <br /><br />
+                          <input
+                            name="product2"
+                            value="8500"
+                            type="checkbox"
+                            onclick="totalIt2()"
+                          />
+                          Photo shoot for 4 hours - ₱8,500
+                          <br /><br />
+                          <input
+                            name="product2"
+                            value="4000"
+                            type="checkbox"
+                            onclick="totalIt2()"
+                          />
+                          Edited photos sent via e-mail within 5 business days -
+                          ₱4,000
+                          <br /><br />
+                          <input
+                            name="product2"
+                            value="2000"
+                            type="checkbox"
+                            onclick="totalIt2()"
+                          />
+                          Edited photos sent via email within 7 business days -
+                          ₱2,000
+                          <br /><br />
+                          <input
+                            name="product2"
+                            value="3000"
+                            type="checkbox"
+                            onclick="totalIt2()"
+                          />
+                          60 days access to your private online gallery -
+                          ₱3000<br /><br />
+                          Total:
+                          <br />
+                          <input
+                            value="₱0.00"
+                            readonly="readonly"
+                            type="text"
+                            id="total2"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-secondary"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                        >
+                          Book an appointment
+                        </button>
+                        <!-- button for portrait package -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle2"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel2"
+                  tabindex="-1"
                 >
-              </p>
-              <a href="#contact" class="btn btn-secondary">Book an appointment</a>
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel2"
+                        >
+                          Meeting Details
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- portrait appointment form here -->
+                        <form
+                          id="taskForm"
+                          action="/assets/pages/admin.html"
+                          method="GET"
+                        >
+                          <label for="taskInput">Your Name:</label>
+                          <input
+                            type="text"
+                            id="taskInput"
+                            placeholder="Juan Dela Cruz"
+                          />
+                          <br>
+                          <label for="phoneInput">Phone No.</label>
+                          <input type="text" id="phoneInput" />
+
+                          <label for="dateInput"
+                            >Schedule an appointment:</label
+                          >
+                          <input type="date" id="dateInput" />
+
+                          <input type="submit" value="Book" id="addBtn" />
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-secondary"
+                  data-bs-target="#portrait"
+                  data-bs-toggle="modal"
+                >
+                  Rates
+                </button>
+                <!-- button for portrait package -->
+              </div>
+            </div>
+            <div class="card m-2 border-start rounded">
+              <img
+                src="assets/images/weddings/wedding7.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wedding</h5>
+                <p class="card-text">
+                  Your wedding day is a once in a lifetime celebration filled
+                  with love, joy and unforgettable moments. We understand the
+                  importance of preserving these precious memories. That's why
+                  we are here to offer you our exeptional wedding shoot
+                  services.
+                </p>
+                <br /><br /><br />
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >We are excited to see you</small
+                  >
+                </p>
+
+                <!--modal for wedding  -->
+                <div
+                  class="modal fade"
+                  id="wedding"
+                  aria-hidden="true"
+                  aria-labelledby="wedding"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel"
+                        >
+                          This a sample quotation
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- wedding packages here -->
+
+                        <div class="wedding">
+                          <h3>Wedding</h3>
+                          <br />
+                          <input
+                            name="product"
+                            value="49850"
+                            type="checkbox"
+                            onclick="totalIt()"
+                          />
+                          Full Wedding Coverage & Album - ₱ 49,850
+                          <br /><br />
+                          <input
+                            name="product"
+                            value="20000"
+                            type="checkbox"
+                            onclick="totalIt()"
+                          />
+                          Pre-nup Photoshoot - ₱20,000
+                          <br /><br />
+                          <input
+                            name="product"
+                            value="15000"
+                            type="checkbox"
+                            onclick="totalIt()"
+                          />
+                          Same Day Edit & AVP - ₱15,000
+                          <br /><br />
+                          <input
+                            name="product"
+                            value="5000"
+                            type="checkbox"
+                            onclick="totalIt()"
+                          />
+                          Canvass & Looseprints - ₱5,000 <br /><br />
+                          <input
+                            name="product"
+                            value="45000"
+                            type="checkbox"
+                            onclick="totalIt()"
+                          />
+                          Videographer - 8-10 mins highlights + Full Length -
+                          ₱45,000
+                          <br /><br />
+                          <input
+                            name="product"
+                            value="85000"
+                            type="checkbox"
+                            onclick="totalIt()"
+                          />
+                          Videographer - 15-20 mins highlights + Full Length -
+                          ₱85,000
+                          <br /><br />
+                          Total:
+                          <br />
+                          <input
+                            value="₱0.00"
+                            readonly="readonly"
+                            type="text"
+                            id="total"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-secondary"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                        >
+                          Book an appointment
+                        </button>
+                        <!-- button for appointment for wedding package -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle2"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel2"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel2"
+                        >
+                         Meeting Details
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- wedding appointment form here -->
+                        <form
+                          id="taskForm"
+                          action="/assets/pages/admin.html"
+                          method="GET"
+                        >
+                          <label for="taskInput">Your Name:</label>
+                          <input
+                            type="text"
+                            id="taskInput"
+                            placeholder="Juan Dela Cruz"
+                          />
+                          <br>
+                          <label for="phoneInput">Phone No.</label>
+                          <input type="text" id="phoneInput" />
+
+                          <label for="dateInput"
+                            >Schedule an appointment:</label
+                          >
+                          <input type="date" id="dateInput" />
+
+                          <input type="submit" value="Book" id="addBtn" />
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-secondary"
+                          data-bs-target="#exampleModalToggle"
+                          data-bs-toggle="modal"
+                        >
+                          Quotation
+                        </button>
+                        <!-- back to button for wedding package -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-secondary"
+                  data-bs-target="#wedding"
+                  data-bs-toggle="modal"
+                >
+                  Rates
+                </button>
+                <!-- button for wedding package -->
+              </div>
+            </div>
+            <div class="card m-2 border-start rounded-start">
+              <img
+                src="assets/images/newborn/newborn3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">New Born</h5>
+                <p class="card-text">
+                  The arrival of a newborn is an incredibly special and joyous
+                  time in your life. Those precious early weeks are filled with
+                  tender moments, tiny toes, and sweet smiles that you will want
+                  to remember forever. We understand the importance of capturing
+                  these cherished memories, and we are here to offer you our
+                  exceptional newborn shoot services.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >We are excited to see you</small
+                  >
+                </p>
+
+                <!--modal for newborn  -->
+                <div
+                  class="modal fade"
+                  id="newBorn"
+                  aria-hidden="true"
+                  aria-labelledby="newBorn"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel"
+                        >
+                          This a sample quotation
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- new born packages here -->
+
+                        <div class="newborn">
+                          <h3>Newborn</h3>
+                          <br />
+                          <input
+                            name="product3"
+                            value="4000"
+                            type="checkbox"
+                            onclick="totalIt3()"
+                          />
+                          Photo shoot for 2 hours - ₱4,000
+                          <br /><br />
+                          <input
+                            name="product3"
+                            value="2500"
+                            type="checkbox"
+                            onclick="totalIt3()"
+                          />
+                          1 pc Hardbound Album (20pgs)- ₱2,500
+                          <br /><br />
+                          <input
+                            name="product3"
+                            value="1300"
+                            type="checkbox"
+                            onclick="totalIt3()"
+                          />
+                          12x16 Glass Frame - ₱1,300
+                          <br /><br />
+                          <input
+                            name="product3"
+                            value="2000"
+                            type="checkbox"
+                            onclick="totalIt3()"
+                          />
+                          Additional Theme and Layout - ₱2,000
+                          <br /><br />
+                          <input
+                            name="product3"
+                            value="1000"
+                            type="checkbox"
+                            onclick="totalIt3()"
+                          />
+                          16gb Flash Drive w/ Pre-Selected Edited Photos -
+                          ₱1000<br /><br />
+                          Total:
+                          <br />
+                          <input
+                            value="₱0.00"
+                            readonly="readonly"
+                            type="text"
+                            id="total3"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-secondary"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                        >
+                          Book an appointment
+                        </button>
+                        <!-- button for appointment for newborn package -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModalToggle2"
+                  aria-hidden="true"
+                  aria-labelledby="exampleModalToggleLabel2"
+                  tabindex="-1"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5"
+                          id="exampleModalToggleLabel2"
+                        >
+                        Meeting Details
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- new born appointment form here -->
+                        <form
+                          id="taskForm"
+                          action="/assets/pages/admin.html"
+                          method="GET"
+                        >
+                          <label for="taskInput">Your Name:</label>
+                          <input
+                            type="text"
+                            id="taskInput"
+                            placeholder="Juan Dela Cruz"
+                          />
+                          <br>
+                          <label for="phoneInput">Phone No.</label>
+                          <input type="text" id="phoneInput" />
+
+                          <label for="dateInput"
+                            >Schedule an appointment:</label
+                          >
+                          <input type="date" id="dateInput" />
+
+                          <input type="submit" value="Book" id="addBtn" />
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-secondary"
+                          data-bs-target="#exampleModalToggle"
+                          data-bs-toggle="modal"
+                        >
+                          Quotation
+                        </button>
+                        <!-- back to button for newborn package -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-secondary"
+                  data-bs-target="#newBorn"
+                  data-bs-toggle="modal"
+                >
+                 Rates
+                </button>
+                <!-- button for newborn package -->
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- reviews -->
+      <div class="reviews-sec pt-5 pb-2" id="reviews">
+        <div class="reviewSection">
+          <div class="reviewHeader">
+            <span> THIS IS WHY WE DO WHAT WE DO</span>
+          </div>
+          <div id="postContainer" class="postDisplay"></div>
+          <div class="inputContainer">
+            <form action="#" method="#" id="rates">
+              <input type="text" id="nameInput" placeholder="Name" />
+              <br />
+              <br />
+              <div class="ratingsContainer">
+                <div class="rate">
+                  <input type="radio" id="star5" name="srate" value="5" />
+                  <label for="star5" title="text"></label>
+                  <input type="radio" id="star4" name="srate" value="4" />
+                  <label for="star4" title="text"></label>
+                  <input type="radio" id="star3" name="srate" value="3" />
+                  <label for="star3" title="text"></label>
+                  <input type="radio" id="star2" name="srate" value="2" />
+                  <label for="star2" title="text"></label>
+                  <input type="radio" id="star1" name="srate" value="1" />
+                  <label for="star1" title="text"></label>
+                </div>
+              </div>
+              <br />
+              <input
+                type="text"
+                id="commentInput"
+                placeholder="Write your message here"
+                maxlength="150"
+              />
+              <br />
+              <br />
+              <input type="submit" value="Post" id="postBtn" />
+            </form>
+          </div>
+        </div>
       </div>
 
+      <!-- get in touch form -->
       <div class="contact-sec pt-5 pb-2" id="contact">
-        <!-- contact US-->
-
-        <!-- get in touch form -->
-        
-        <div class="message-container">
-          <h3>Get in touch with us</h3>
-          <form class="form-message" action="https://formsubmit.co/rjpalang@gmail.com" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="number" name="number" placeholder="Phone no." required>
-              <input type="email" name="email" placeholder="Email" required>
-              <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
-              <button type="submit" value="value-1">Send </button>
+        <div class="get-in-touch message-container">
+          <form
+            class="form-message"
+            action="https://formsubmit.co/rjpalang@gmail.com"
+            method="POST"
+          >
+            <h3>Get in touch with us</h3>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="number"
+              name="number"
+              placeholder="Phone no."
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+            <button type="submit" value="value-1">Send</button>
           </form>
+        </div>
       </div>
-     
-        
+
       <!--Bottom Footer-->
       <div class="bottom section-padding">
         <div class="container">
@@ -562,14 +1123,9 @@
       </div>
 
       <!-- sticky nav div -->
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
     </div>
-    </script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
-
-
-
-  
- 
