@@ -38,7 +38,7 @@ function validatePassword(password) {
   var passRef = "kai1234";
   if (password == passRef) {
     // alert("Connect")
-    window.location.href = "/assets/pages/admin.html";
+    window.location.href = "assets/pages/admin.html";
     return true;
   } else {
     alert("Incorrect Password");
